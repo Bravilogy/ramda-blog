@@ -171,10 +171,10 @@ doMaths(1, 2, 0.3, 3.4);
 Our `reduce` method would be confused taking `1, 2, 0.3, 3.4` as initial arguments. So we let `Math.max` produce that initial data first.
 
 ### dilemma
-Do we keep the left-to-right computation since it's kinda more readable or switch to right-to-left instead?
+Do we keep the left-to-right computation or switch to right-to-left instead?
 
 ### solution
-Have both versions.
+Really, it comes down to whatever you find more readable, so why not have both versions?
 ```
 const pipe = (fn, ...fns) => (...args) =>
   fns.reduce((result, x) => x(result), fn(...args)); // => left-to-right computation
