@@ -252,7 +252,7 @@ Or perhaps we're receiving an array of `page` objects from the server that look 
 
 We want to reject the ones that are `archived`, and transform the rest with the following logic:
 1. Make `title` uppercase
-2. prepand '//test.amido.com' to the `url`
+2. prepend *//test.amido.com* to the `url`
 3. default `active` property to false if empty,
 4. increment `meta -> views`
 5. default `meta -> comments` to 0 if empty
