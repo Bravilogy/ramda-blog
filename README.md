@@ -197,6 +197,9 @@ Another `lodash` library one might say. But no, Ramda specifically targets purit
 not a single function here that could have a side effect (like `Math.random`, `debounce` and etc). Ramda not only comes with loads of
 tiny utility functions, but also plays nicely with `Monadic` interfaces in JS, that will be covered in the next chapter.
 
+_P.S. There is a nice collection of recipes for `Ramda` to get you started:
+[Ramda cookbook](https://github.com/ramda/ramda/wiki/Cookbook)_
+
 ## Few examples
 ### episode 1: spread
 Suppose we have an object and we need to take one of its properties and spread it at a current level:
