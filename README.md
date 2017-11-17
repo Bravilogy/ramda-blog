@@ -166,6 +166,7 @@ pass multiple arguments to our composed function, so `fn` will produce the initi
 For example, if we do this (left-to-right computation):
  ```
 const doMaths = compose(Math.max, Math.round);
+doMaths(1, 2, 0.3, 3.4);
 ```
 Our `reduce` method would be confused taking `1, 2, 0.3, 3.4` as initial arguments. So we let `Math.max` produce that initial data first.
 
